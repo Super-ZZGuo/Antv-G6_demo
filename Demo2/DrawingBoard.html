@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>自定义画板</title>
+</head>
+<body>
+<canvas id="mycanvas" width="800" height="500" style="border:1px solid #d3d3d3">
+    浏览器不支持canvas   <!-- 如果不支持会显示这段文字 -->
+</canvas>
+<script src="Functions.js"></script>
+<!-- 通过 CDN 引入 FileSaver.js -->
+<!-- 我们也可以通过 npm 引入 https://www.npmjs.com/package/file-saver
+ -->
+<script src="https://cdn.bootcss.com/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+<!-- 待下载对 canvas 元素 -->
+
+
+
+<br>
+<button style="width: 80px;background-color: white;" onclick="drawfree()">自由绘画</button>
+<button style="width: 80px;background-color: white;" onclick="drawStraightLine()">绘制直线</button>
+<button style="width: 80px;background-color: white;" onclick="drawReactLine()">绘制矩形</button>
+
+<br>
+<button style="width:80px;background-color:yellow;" onclick='linecolor="yellow";'>YELLOW</button>
+<button style="width:80px ;background-color:red;" onclick='linecolor="red";'>RED</button>
+<button style="width:80px ;background-color:blue;" onclick='linecolor="blue";'>BLUE</button>
+<button style="width:80px ;background-color:green;" onclick='linecolor="green";'>GREEN</button>
+<button style="width:80px ;background-color:black;" onclick='linecolor="black";'>BLACK</button>
+
+<br>
+<button style="width: 80px;background-color: white;" onclick="linw=4;">4PX</button>
+<button style="width: 80px;background-color: white;" onclick="linw=8;">8PX</button>
+<button style="width: 80px;background-color: white;" onclick="linw=16;">16PX</button>
+
+<br>
+<button style="width: 80px;background-color: white;" onclick="clearCanvas()">清空画布</button>
+<button style="width: 80px;background-color: white;" onclick="reCanvas()">撤回</button>
+<br>
+<button style="width: 100px;background-color: white;" onclick="downloadpng('#mycanvas')">下载png格式</button>
+<button style="width: 100px;background-color: white;" onclick="downloadjpeg('#mycanvas')">下载jpeg格式</button>
+
+
+</body>
+</html>

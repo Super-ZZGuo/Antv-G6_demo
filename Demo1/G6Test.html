@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Demo</title>
+    <link rel="stylesheet" href="btn.css">
+</head>
+
+<body>
+<!--引入G6-->
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.7.1/dist/g6.min.js"></script>
+
+<div>    
+    <script type="text/javascript" src="function.js"></script>
+    <button id="btn1"  onclick="CircleSizePlus()">圆形size增大</button>
+    <button id="btn2"  onclick="CircleSizeReduce()">圆形size减小</button>
+    <button id="btn21"  onclick="changeCircleColorRED()">圆形颜色变红</button>
+    <button id="btn22"  onclick="changeCircleColorGREEN()">圆形颜色变绿</button>
+
+    <button id="btn3"  onclick="TriangleSizePlus()">三角形size增大</button>
+    <button id="btn4"  onclick="TriangleSizeReduce()">三角形size减小</button>
+    <button id="btn41"  onclick="changeTriangleColorRED()">三角形颜色变红</button>
+    <button id="btn42"  onclick="changeTriangleColorGREEN()">三角形颜色变绿</button>
+
+    <button id="btn5"  onclick="ParallelogramSizePlus()">平行四边形size增大</button>
+    <button id="btn6"  onclick="ParallelogramSizeReduce()">平行四边形size减小</button>
+    <button id="btn61"  onclick="changeParallelogramColorRED()">平行四边形颜色变红</button>
+    <button id="btn62"  onclick="changeParallelogramColorGREEN()">平行四边形颜色变绿</button>
+
+</div>
+
+<div id="mountNode"></div>
+
+<!--导入data.js图源数据-->
+<script type="text/javascript" src="data1.js"></script>
+
+</body>
+
+</html>
